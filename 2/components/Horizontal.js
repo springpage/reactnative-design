@@ -1,31 +1,25 @@
 /* @flow */
 
 import React, { Component } from 'react';
-import {
-  View,
-  Text,
-  ScrollView,
-  Dimensions,
-  StyleSheet,
-} from 'react-native';
+import { View, Text, ScrollView, Dimensions, StyleSheet } from 'react-native';
 
 export default class Horizontal extends Component {
   render() {
     return (
       <ScrollView
-      horizontal={true}
-      pagingEnabled={true}
-      style={styles.container}
+        horizontal={true}
+        pagingEnabled={true}
+        style={styles.container}
       >
         <View style={styles.outer}>
           <Text style={styles.innerText}>Welcome to CLO </Text>
         </View>
 
-        <View style={[styles.outer,styles.red]}>
+        <View style={[styles.outer, styles.red]}>
           <Text style={styles.innerText}>Hello again </Text>
         </View>
 
-        <View style={[styles.outer,styles.green]}>
+        <View style={[styles.outer, styles.green]}>
           <Text style={styles.innerText}>Available on Ios and Android </Text>
         </View>
       </ScrollView>
@@ -34,26 +28,24 @@ export default class Horizontal extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-
-  },
-  outer:{
+  container: {},
+  outer: {
     backgroundColor: '#007bb6',
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height,
+    height: Dimensions.get('window').height
   },
-  innerText:{
+  innerText: {
     color: '#fff',
     fontSize: 23,
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   },
-  red:{
-    backgroundColor: '#dd4b39',
+  red: {
+    backgroundColor: '#dd4b39'
   },
-  green:{
-    backgroundColor: '#64D448',
+  green: {
+    backgroundColor: '#64D448'
   }
 });

@@ -1,32 +1,22 @@
 /* @flow */
 
 import React, { Component } from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  Image,
-  TouchableOpacity,
-} from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-
 
 export default class Navbar extends Component {
   render() {
     return (
       <View style={styles.container}>
         <View style={styles.navbar}>
-          <Image
-            style={styles.logo}
-            source={require('./youtube.png')}
-          />
+          <Image style={styles.logo} source={require('./youtube.png')} />
           <View style={styles.moveright}>
-              <TouchableOpacity>
-              <Icon name='search' size={27} style={styles.icons} />
-              </TouchableOpacity>
-              <TouchableOpacity>
-              <Icon name='account-circle' size={27} style={styles.icons} />
-              </TouchableOpacity>
+            <TouchableOpacity>
+              <Icon name="search" size={27} style={styles.icons} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Icon name="account-circle" size={27} style={styles.icons} />
+            </TouchableOpacity>
           </View>
         </View>
       </View>
@@ -35,10 +25,8 @@ export default class Navbar extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-
-  },
-  navbar:{
+  container: {},
+  navbar: {
     marginTop: 35,
     height: 55,
     backgroundColor: '#fff',
@@ -46,22 +34,17 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
-
-
-
+    justifyContent: 'space-between'
   },
-  logo:{
+  logo: {
     width: 120,
-    height: 23,
+    height: 23
   },
-  moveright:{
-    flexDirection: 'row',
-
+  moveright: {
+    flexDirection: 'row'
   },
-  icons:{
+  icons: {
     padding: 5,
-    marginLeft: 15,
-
+    marginLeft: 15
   }
 });

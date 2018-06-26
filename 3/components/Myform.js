@@ -6,20 +6,17 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  StyleSheet,
+  StyleSheet
 } from 'react-native';
 
 export default class Myform extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TextInput
-          placeholder='Username'
-          style={styles.input}
-        />
+        <TextInput placeholder="Username" style={styles.input} />
         <TextInput
           secureTextEntry
-          placeholder='Password'
+          placeholder="Password"
           style={styles.input}
         />
         <TouchableOpacity style={styles.buttoncontainer}>
@@ -33,23 +30,22 @@ export default class Myform extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
-
+    padding: 20
   },
-  input:{
+  input: {
     height: 40,
     backgroundColor: 'rgba(255,255,255,0.8)',
     paddingLeft: 12,
-    marginBottom: 15,
+    marginBottom: 15
   },
-  buttoncontainer:{
+  buttoncontainer: {
     backgroundColor: '#27ae60',
     paddingVertical: 15,
-    paddingBottom: 10,
+    paddingBottom: 10
   },
-  buttontext:{
+  buttontext: {
     textAlign: 'center',
     color: '#fff',
-    fontWeight: 'bold',
-  },
+    fontWeight: 'bold'
+  }
 });

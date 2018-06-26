@@ -7,7 +7,7 @@ import {
   Image,
   Dimensions,
   KeyboardAvoidingView,
-  StyleSheet,
+  StyleSheet
 } from 'react-native';
 import Myform from './Myform';
 
@@ -16,11 +16,8 @@ export default class Login extends Component {
     return (
       <KeyboardAvoidingView behavior="padding" style={styles.container}>
         <View style={styles.logocontainer}>
-          <Image
-            style={styles.logo}
-            source={require('./images/icologo.png')}
-          />
-        <Text style={styles.title}>A simple login app</Text>
+          <Image style={styles.logo} source={require('./images/icologo.png')} />
+          <Text style={styles.title}>A simple login app</Text>
         </View>
         <View style={styles.myform}>
           <Myform />
@@ -34,23 +31,22 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#282830',
-    width: Dimensions.get('window').width,
+    width: Dimensions.get('window').width
   },
-  logocontainer:{
+  logocontainer: {
     flexGrow: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
-  logo:{
+  logo: {
     width: 100,
-    height: 100,
+    height: 100
   },
-  title:{
-    color:'#fff',
+  title: {
+    color: '#fff',
     marginTop: 10
   },
-  myform:{
-    flex:1,
-  },
-
+  myform: {
+    flex: 1
+  }
 });

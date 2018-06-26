@@ -1,17 +1,13 @@
 /* @flow */
 
 import React, { Component } from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 export default class Mid extends Component {
   render() {
     return (
       <View style={styles.mid}>
-        <View style={[styles.outerview,styles.leftbar]}>
+        <View style={[styles.outerview, styles.leftbar]}>
           <Text style={styles.textone}>75+</Text>
           <Text style={styles.texttwo}>Image</Text>
         </View>
@@ -29,32 +25,25 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#CF000F',
     borderTopWidth: 8,
-    borderTopColor: '#fff',
-
-
+    borderTopColor: '#fff'
   },
-  outerview:{
+  outerview: {
     flex: 1,
     padding: 20,
-    alignItems: 'center',
-
-
+    alignItems: 'center'
   },
-  textone:{
-    color:'#fff',
+  textone: {
+    color: '#fff',
     fontSize: 18,
-    fontWeight: 'bold',
-
+    fontWeight: 'bold'
   },
-  texttwo:{
-    color:'#fff',
+  texttwo: {
+    color: '#fff',
     fontSize: 14,
-    marginTop: 5,
-
+    marginTop: 5
   },
-  leftbar:{
+  leftbar: {
     borderRightWidth: 3,
-    borderRightColor: '#fff',
-
+    borderRightColor: '#fff'
   }
 });

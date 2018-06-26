@@ -1,22 +1,25 @@
 /* @flow */
 
 import React, { Component } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 import {
-  View,
-  Text,
-  StyleSheet,
-} from 'react-native';
-import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
-
+  Container,
+  Header,
+  Left,
+  Body,
+  Right,
+  Button,
+  Icon,
+  Title
+} from 'native-base';
 
 export default class HeaderCustom extends Component {
   render() {
     return (
-
       <Header>
         <Left>
           <Button transparent>
-            <Icon name='menu' />
+            <Icon name="menu" />
           </Button>
         </Left>
         <Body>
@@ -24,11 +27,10 @@ export default class HeaderCustom extends Component {
         </Body>
         <Right>
           <Button transparent>
-            <Icon name='camera' />
+            <Icon name="camera" />
           </Button>
         </Right>
       </Header>
-
     );
   }
 }

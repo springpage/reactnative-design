@@ -1,12 +1,7 @@
 /* @flow */
 
 import React, { Component } from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  Image,
-} from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 
 export default class Body extends Component {
   render() {
@@ -14,20 +9,19 @@ export default class Body extends Component {
     return (
       <View style={styles.container}>
         <Image
-          source={{uri:video.snippet.thumbnails.medium.url}}
-          style={{height: 200, borderRadius: 5}}
+          source={{ uri: video.snippet.thumbnails.medium.url }}
+          style={{ height: 200, borderRadius: 5 }}
         />
         <View style={styles.textcontainer}>
           <Image
-            source={{uri:video.snippet.thumbnails.default.url}}
+            source={{ uri: video.snippet.thumbnails.default.url }}
             style={styles.profilepic}
           />
           <View style={styles.innercontainer}>
-          <Text style={styles.videotitle}>{video.snippet.title}</Text>
-          <Text style={styles.videostats}>{video.snippet.channelTitle}</Text>
+            <Text style={styles.videotitle}>{video.snippet.title}</Text>
+            <Text style={styles.videostats}>{video.snippet.channelTitle}</Text>
           </View>
         </View>
-
       </View>
     );
   }
@@ -37,36 +31,34 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 15,
-    backgroundColor: '#000',
+    backgroundColor: '#000'
   },
-  textcontainer:{
+  textcontainer: {
     marginLeft: 10,
     paddingRight: 5,
     flexDirection: 'row',
-    paddingTop: 15,
-
+    paddingTop: 15
   },
-  videotitle:{
+  videotitle: {
     fontSize: 14,
     fontWeight: 'bold',
     color: '#fff',
-    marginRight: 4,
-
+    marginRight: 4
   },
-  profilepic:{
+  profilepic: {
     width: 50,
     height: 50,
     borderRadius: 25,
     borderWidth: 2,
-    borderColor: '#fff',
+    borderColor: '#fff'
   },
-  innercontainer:{
+  innercontainer: {
     marginLeft: 10,
-    padding: 5,
+    padding: 5
   },
-  videostats:{
+  videostats: {
     fontSize: 12,
     color: '#fff',
-    marginTop: 5,
-  },
+    marginTop: 5
+  }
 });
